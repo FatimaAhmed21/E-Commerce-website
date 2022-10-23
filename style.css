@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Kanit:wght@200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+    --mainColor: #088178;
+}
+
+ul {
+    list-style: none;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    outline: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+section {
+    padding: 80px 0 50px;
+}
+
+.fa-star {
+    color: rgb(255, 196, 0);
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+
+/* //////////////////////////////////////////////////// */
+
+.navbar {
+    background-color: #e3e6f3;
+}
+
+.navbar-nav li {
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar-nav li a {
+    transition: all .3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--mainColor);
+}
+
+
+/* /////////////////////////////////////////////////////// */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h2:nth-child(odd) {
+    color: var(--mainColor);
+}
+
+.hero button {
+    color: var(--mainColor);
+    border: none;
+    outline: none;
+    background-image: url(/img/button.png);
+    padding: 15px 80px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    font-weight: 600;
+}
+
+
+/* /////////////////////////////////////////////////////// */
+
+.features p {
+    width: 150px;
+    margin: 20px auto 0;
+    color: var(--mainColor);
+}
+
+.features div:nth-child(1) p {
+    background-color: #8bdbe49e;
+}
+
+.features div:nth-child(2) p {
+    background-color: #df88ba7a;
+}
+
+.features div:nth-child(3) p {
+    background-color: #b8dd7f7a;
+}
+
+.features div:nth-child(4) p {
+    background-color: #89bfe194;
+    ;
+}
+
+.features div:nth-child(5) p {
+    background-color: #9081b363;
+}
+
+.features div:nth-child(6) p {
+    background-color: #bd8f7273;
+}
+
+.featured-products .col .card,
+.new-arrivals .col .card {
+    border-radius: 20px;
+}
+
+.featured-products .col .card img,
+.new-arrivals .col .card img {
+    transition: .3s all ease;
+    opacity: .8;
+}
+
+.featured-products .col .card img:hover,
+.new-arrivals .col .card img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.featured-products p span,
+.new-arrivals p span {
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.featured-products .col p,
+.new-arrivals .col p {
+    color: rgb(123, 121, 121);
+}
+
+.featured-products .col p.shop,
+.new-arrivals .col p.shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.featured-products .icon,
+.new-arrivals .icon {
+    padding: 7px;
+    font-size: 20px;
+    background-color: #81c5c17e;
+    border-radius: 50%;
+    transition: .2s all ease;
+}
+
+.featured-products .icon:hover,
+.new-arrivals .icon:hover {
+    background-color: #81c5c14e;
+    color: #088179b7;
+}
+
+
+/* /////////////////////////////////////////////////////// */
+
+.repair {
+    color: #fff;
+}
+
+.repair h3 {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.repair button {
+    background: var(--mainColor);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.repair button:hover {
+    background: #fff;
+}
+
+
+/* /////////////////////////////////////////////////////// */
+
+.banner .col {
+    opacity: .7;
+    transition: .3s all ease;
+}
+
+.banner .col:hover {
+    opacity: 1;
+}
+
+.banner .content {
+    padding: 100px 20px;
+    height: 400px;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 18px;
+}
+
+.banner .content button {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: .3s all ease;
+}
+
+.banner .col:hover button {
+    background: var(--mainColor);
+    border: none;
+    outline: none;
+}
+
+.banner .content2 {
+    padding: 100px 20px;
+    height: 300px;
+}
+
+.banner .content2 h1 {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.banner .content2 p {
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+}
+
+
+/* /////////////////////////////////////////////////////// */
+
+.sign {
+    padding: 50px;
+}
+
+.sign p {
+    color: #afaff5;
+}
+
+.sign p span {
+    color: rgb(255, 183, 0);
+}
+
+@media (max-width: 500px) {
+    .sign .sign-up {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.sign input {
+    padding: 10px;
+    width: 300px;
+    outline: none;
+}
+
+.sign button {
+    background: var(--mainColor);
+    color: #fff;
+    padding: 10px 0;
+    width: 100px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 0;
+}
+
+
+/* /////////////////////////////////////////////////////// */
+
+footer {
+    margin: 50px;
+}
+
+footer .col-lg-4 h3 {
+    margin-top: 20px;
+}
+
+footer .col-lg-4 p {
+    color: rgb(121, 121, 121);
+}
+
+footer .col-lg-4 p span {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+footer .col-lg-4 p i {
+    color: #000;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+footer .col-lg-2 li {
+    margin-bottom: 15px;
+}
+
+footer .col-lg-2 li a {
+    color: rgb(121, 121, 121);
+}
+
+footer button.btn {
+    border-radius: 5px;
+    border: 2px solid var(--mainColor);
+}
+
+footer button.btn:hover {
+    opacity: .8;
+}
+
+
+/* ///////////////////////////////////////////////// */
+
+div.py-5 p span {
+    padding: 15px 17px;
+    color: #fff;
+    background: var(--mainColor);
+    margin: 2px;
+    cursor: pointer;
+}
+
+
+/* //////////////////////////////////////////////// */
+
+.about .fs-5 {
+    background-color: #ccc;
+}
+
+.about img {
+    width: 100%;
+    height: 500px;
+}
+
+.download {
+    padding: 50px 0 20px;
+}
+
+.download h2 a {
+    color: rgb(171, 9, 240);
+    text-decoration: underline;
+}
+
+.download .video {
+    width: 70%;
+    margin: auto;
+}
+
+.download .video video {
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+    .about img {
+        display: none;
+    }
+    .download .video {
+        width: 100%;
+    }
+    .download h2 {
+        font-size: 40px;
+    }
+}
+
+
+/* //////////////////////////////////////////////////// */
+
+.product img {
+    width: 100%
+}
+
+.product p.price {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.product select {
+    padding: 10px 20px;
+}
+
+.product .cart input,
+input[type=number] {
+    width: 50px;
+    padding: 5px;
+}
+
+.product .cart button.btn {
+    background: var(--mainColor);
+    color: #fff;
+    margin-left: 5px;
+}
+
+.product .details p {
+    line-height: 2;
+}
+
+
+/* ///////////////////////////////////////////////// */
+
+.location h3 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.location p {
+    font-weight: 300;
+}
+
+.location .col-lg-5 div {
+    margin: 15px 0;
+}
+
+.location div i {
+    margin-right: 10px;
+}
+
+.form {
+    padding: 30px 0;
+}
+
+.form img {
+    width: fit-content;
+}
+
+.form .details {
+    width: 80%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* /////////////////////////////////////////// */
+
+.blog .row .col-lg-6 h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.blog .row .col-lg-6 img {
+    width: 100%;
+    height: 80%;
+    margin-top: -37px;
+}
+
+.blog .row .col-lg-6.content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0 30px;
+}
+
+.blog .row .col-lg-6.content p {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.blog .row .col-lg-6.content span {
+    position: relative;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+.blog .row .col-lg-6.content span::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: var(--mainColor);
+    position: absolute;
+}
+
+.table-borderless>:not(caption)>*>* {
+    padding: 20px;
+    width: 0px;
+}
+
+.table-borderless>:not(caption) td img {
+    width: 100%;
+}
+
+table td span {
+    color: #7257a8;
+    font-weight: bold;
+    padding: 2px;
+    border: 2px solid #7257a8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.coupon .form-control {
+    width: 45%;
+}
